@@ -1,0 +1,19 @@
+﻿<Window x:Class="TVTKWindows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TVTKWindows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnStart" Margin="10,19,690,395" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Height="20" Content="Start" Click="btnStart_Click"></Button>
+        <MediaElement x:Name="meContent" Margin="357,9,7,25" />
+        <Button x:Name="btnSaveServer" Content="Сохранить" HorizontalAlignment="Left" Margin="210,125,0,0" VerticalAlignment="Top" Width="70" Click="btnSaveServer_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,78,0,0" Text="Адрес сервера:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxIPServer" HorizontalAlignment="Left" Margin="10,127,0,0" Text="127.0.0.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxPortServer" HorizontalAlignment="Left" Margin="135,127,0,0" Text="8080" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,107,0,0" Text="ip" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="135,111,0,0" Text="Порт" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
